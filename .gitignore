@@ -1,0 +1,11 @@
+.vs/
+APIService/bin/
+packages/
+APIService/obj/Debug/APIService.pdb
+APIService/obj/Debug/APIService.exe
+APIService/obj/Debug/APIService.csprojAssemblyReference.cache
+APIService/obj/Debug/APIService.csproj.GenerateResource.cache
+APIService/obj/Debug/APIService.csproj.FileListAbsolute.txt
+APIService/obj/Debug/APIService.csproj.CoreCompileInputs.cache
+APIService/obj/Debug/APIService.csproj.CopyComplete
+APIService/obj/Debug/APIService.WebAPISelfHosting.resources
