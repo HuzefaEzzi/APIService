@@ -31,12 +31,20 @@ namespace APIService
                defaults: new { id = RouteParameter.Optional }
            );
             config.Routes.MapHttpRoute(
+               name: "Html",
+               routeTemplate: "html/{*abc}",
+               defaults: new { abc = RouteParameter.Optional },
+               constraints: null,
+               handler: new FileHandler());
+
+            config.Routes.MapHttpRoute(
                name: "Route2",
                routeTemplate: "api2/{controller}/{id}",
                defaults: new { id = RouteParameter.Optional },
                constraints: null,
                handler: new MessageHandler(serviceHolder)  // per-route message handler
             );
+            
 
             HttpSelfHostServer server = new HttpSelfHostServer(config);
             server.OpenAsync().Wait();
